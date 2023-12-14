@@ -21,7 +21,7 @@ if (new_node == NULL)
 printf("Error\n");
 exit(0); }
 
-/* If the stack is not empty, update the previous pointer of the current head */
+/* Update the previous pointer of the current head */
 if (aux)
 aux->prev = new_node;
 
