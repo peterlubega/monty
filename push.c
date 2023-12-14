@@ -10,19 +10,16 @@
 void f_push(stack_t **head, unsigned int counter)
 {
 int n, j = 0, flag = 0;
-
 /* Check if the argument for push is provided */
 if (bus.arg)
 {
 if (bus.arg[0] == '-')
 j++;
-
 /* Validate that the argument is a valid integer */
 for (; bus.arg[j] != '\0'; j++)
 {
 if (bus.arg[j] > 57 || bus.arg[j] < 48)
 flag = 1; }
-
 /* If the argument is not a valid integer, exit with an error */
 if (flag == 1)
 {
@@ -42,10 +39,8 @@ free(bus.content);
 free_stack(*head);
 exit(EXIT_FAILURE);
 }
-
 /* Convert the argument to an integer */
 n = atoi(bus.arg);
-
 /* Add the new node to the stack or queue based on the flag */
 if (bus.lifi == 0)
 addnode(head, n);

@@ -11,7 +11,6 @@ void f_mod(stack_t **head, unsigned int counter)
 {
 stack_t *h;
 int len = 0, aux;
-
 /* Traverse the satck to counf the number of elements */
 h = *head;
 while (h)
@@ -19,7 +18,6 @@ while (h)
 h = h->next;
 len++;
 }
-
 /* Check if there are at least two elements in the stack */
 if (len < 2)
 {
@@ -29,9 +27,7 @@ free(bus.content);
 free_stack(*head);
 exit(EXIT_FAILURE);
 }
-
 h = *head;
-
 /* Check if the divisor (top element) is zero */
 if (h->n == 0)
 {
@@ -41,14 +37,11 @@ free(bus.content);
 free_stack(*head);
 exit(EXIT_FAILURE);
 }
-
 /* Perfome the modulus operation and update the stack */
 aux = h->next->n % h->n;
 h->next->n = aux;
-
 /* Update the head of the stack to point to the next node */
 *head = h->next;
-
 /* Free the mempry of the removed node */
 free(h);
 }
