@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
- * f_pint - Prints the value at the top of the stack
+ * fn_pint - Prints the value at the top of the stack
  * followed by a new line.
  * @head: Pointer to the head of the stack.
  * @counter: Line number where the operation is called.
  * Return: No return value.
  */
 
-void f_pint(stack_t **head, unsigned int counter)
+void fn_pint(stack_t **head, unsigned int counter)
 {
 
 /* Check if the stack is empty*/

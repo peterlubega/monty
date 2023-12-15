@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * f_push - Adds a new node with a given integer to the stack.
+ * fn_push - Adds a new node with a given integer to the stack.
  * @head: Pointer to the head of the stack.
  * @counter: Line number where the operation is called.
  * Return: No return value.
  */
 
-void f_push(stack_t **head, unsigned int counter)
+void fn_push(stack_t **head, unsigned int counter)
 {
 int n, j = 0, flag = 0;
 /* Check if the argument for push is provided */

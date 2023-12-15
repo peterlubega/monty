@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * f_sub - Subtracts the top element of the stack from the second top element.
+ * fn_sub - Subtracts the top element of the stack from the second top element.
  * @head: Pointer to the head of the stack.
  * @counter: Line number where the operation is called.
  * Return: No return value.
  */
-void f_sub(stack_t **head, unsigned int counter)
+void fn_sub(stack_t **head, unsigned int counter)
 {
 stack_t *aux;
 int sus, nodes;

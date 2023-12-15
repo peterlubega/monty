@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * f_pop - reomves the top element of the stack
+ * fn_pop - reomves the top element of the stack
  * @head: Pointer to the head of the stack.
  * @counter: Line number where the operation is called.
  * Return: No return value.
  */
-void f_pop(stack_t **head, unsigned int counter)
+void fn_pop(stack_t **head, unsigned int counter)
 {
 stack_t *h;
 

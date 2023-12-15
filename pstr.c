@@ -1,13 +1,15 @@
 #include "monty.h"
 
 /**
- * f_pstr - prints the string starting at the top of the stack,
+ * fn_pstr - prints the string starting at the top of the stack,
  * followed by a new line
  * @head: Pointer to the head of the stack.
+ * Description: This function prints the string starting at the top
+ * of the stack, followed by a new line.
  * @counter: Line number where the operation is called
  * Return: No return value
  */
-void f_pstr(stack_t **head, unsigned int counter)
+void fn_pstr(stack_t **head, unsigned int counter)
 {
 stack_t *h;
 (void)counter;
@@ -21,10 +23,7 @@ printf("\n");
 return;
 }
 
-/**
- * Traverse the stack and print characters until encountering
- * a zero or a value outside the ASCII printable range
- */
+/* Traverse the stack and print characters until codition */
 while (h && h->n != 0 && h->n >= 0 && h->n <= 127)
 {
 printf("%c", h->n);

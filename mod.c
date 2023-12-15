@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * f_mod - computes the reminder of the division of the second
+ * fn_mod - computes the reminder of the division of the second
  * top element of the stack by the top element of the stack
  * @head: pointer to the head of the stack
  * @counter: line number where the operation is called
  * Return: no return
  */
-void f_mod(stack_t **head, unsigned int counter)
+void fn_mod(stack_t **head, unsigned int counter)
 {
 stack_t *h;
 int len = 0, aux;

@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * f_queue - Sets the stack behavior to queue (FIFO).
+ * fn_queue - Sets the stack behavior to queue (FIFO).
  * @head: Pointer to the head of the stack.
  * @counter: Line number where the operation is called.
  * Return: No return value.
  */
-void f_queue(stack_t **head, unsigned int counter)
+void fn_queue(stack_t **head, unsigned int counter)
 {
 (void)head;
 (void)counter;

@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * f_rotl - Rotates the stack to the top.
+ * fn_rotl - Rotates the stack to the top.
  * @head: Pointer to the head of the stack.
  * @counter: Line number where the operation is called
  * Return: No return value.
  */
 
-void f_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
+void fn_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 {
 stack_t *tmp = *head, *aux;
 
